@@ -78,8 +78,8 @@ const Home = () => {
               <p className="text-2xl font-semibold">
                 ${parseFloat(coin.priceUsd).toFixed(2)}
               </p>
-              <p className={`text-sm ${coin.changePercent24Hr > 0 ? 'text-green-500' : 'text-red-500'}`}>
-                {parseFloat(coin.changePercent24Hr).toFixed(2)}% (24h)
+              <p className={`text-sm ${Number(coin.changePercent24Hr) > 0 ? 'text-green-500' : 'text-red-500'}`}>
+                {Number(coin.changePercent24Hr).toFixed(2)}% (24h)
               </p>
             </div>
           </Link>

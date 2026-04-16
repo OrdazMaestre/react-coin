@@ -1,17 +1,16 @@
 // src/App.jsx
-import { BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import AppRoutes from './routes/AppRoutes';
+import Navbar from './components/Navbar'
+import AppRoutes from './routes/AppRoutes'   // ← Usamos el archivo de rutas
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Navbar />
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+      <Navbar />
+      <main className="container mx-auto p-4 pt-8">
         <AppRoutes />
-      </div>
-    </BrowserRouter>
-  );
+      </main>
+    </div>
+  )
 }
 
-export default App;
+export default App
