@@ -54,12 +54,12 @@ const Home = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="coin-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredCoins.map(coin => (
           <Link
             key={coin.id}
             to={`/coin/${coin.id}`}
-            className="block bg-white dark:bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition"
+            className="coin-card block bg-white dark:bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition"
           >
             <div className="flex justify-between items-start">
               <div>

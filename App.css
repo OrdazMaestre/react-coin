@@ -1,0 +1,66 @@
+/* ===============================
+   GRID DE FICHAS
+   =============================== */
+
+.coin-grid {
+  align-items: stretch;
+}
+
+/* ===============================
+   FICHA DE CRIPTOMONEDA
+   =============================== */
+
+.coin-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover elegante */
+.coin-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   CABECERA DE LA FICHA
+   =============================== */
+
+.coin-card h3 {
+  line-height: 1.2;
+}
+
+/* Símbolo más discreto */
+.coin-card p {
+  margin: 0;
+}
+
+/* ===============================
+   PRECIO
+   =============================== */
+
+.coin-card .price {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* ===============================
+   BOTÓN FAVORITO
+   =============================== */
+
+.coin-card button {
+  transition: transform 0.15s ease;
+}
+
+.coin-card button:hover {
+  transform: scale(1.15);
+}
+
+/* ===============================
+   MODO OSCURO (extra)
+   =============================== */
+
+.dark .coin-card {
+  background-color: #1f2937;
+}

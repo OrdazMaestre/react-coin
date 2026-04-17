@@ -63,11 +63,11 @@ const Favorites = () => {
         <p className="text-gray-500">{favoriteCoins.length} criptomonedas</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="coin-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {favoriteCoins.map(coin => (
           <div
             key={coin.id}
-            className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition relative"
+            className="coin-card bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition relative"
           >
             <button
               onClick={() => handleRemoveFavorite(coin.id)}
